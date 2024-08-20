@@ -51,6 +51,6 @@ def download_and_delete_image(url, save_path, num_downloads=10, delay=1):
 # 使用示例  
 save_path = "daia"  # 你需要提供一个有效的保存路径  
 url = "http://pmt823bd6.pic46.websiteonline.cn/upload/ym.png"  # 示例URL  
-num_downloads = 5555 # 控制下载次数  
+num_downloads = 55555 # 控制下载次数  
 delay = 0.1  # 指定下载间隔时间（秒）  
 download_and_delete_image(url, save_path, num_downloads, delay)
