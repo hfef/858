@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-    cout<< "yoppoedu" << endl;
+    cout<< "y58" << endl;
     return 0;
 }
