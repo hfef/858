@@ -3,7 +3,6 @@ import requests
 import time  
 import os  
 from concurrent.futures import ThreadPoolExecutor, as_completed  
-
 def download_and_delete_image_worker(url, file_path, total_bytes):  
     headers = {  
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'  
@@ -45,7 +44,6 @@ def download_and_delete_image(url, save_path, num_downloads=10, delay=1):
             futures.append(executor.submit(download_and_delete_image_worker, url, file_path, total_bytes))  
             if i < num_downloads - 1:  
                 time.sleep(delay)  
-
         for future in as_completed(futures):  
             pass  
 
