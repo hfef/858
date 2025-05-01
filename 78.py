@@ -35,7 +35,7 @@ def convert_bytes_to_mb(num):
     """  
     return num / (1024 * 1024)  # 将字节转换为MB  
 
-def download_and_delete_image(url, save_path, num_downloads=10, delay=1):  
+def download_and_delete_image(url, save_path, num_downloads, delay):  
     total_bytes = [0]  # 用于存储总的下载字节数  
     with ThreadPoolExecutor() as executor:  
         futures = []  
@@ -50,6 +50,6 @@ def download_and_delete_image(url, save_path, num_downloads=10, delay=1):
 # 使用示例  
 save_path = "daia"  # 你需要提供一个有效的保存路径  
 url = "http://pmt823bd6.pic46.websiteonline.cn/upload/ym.png"  # 示例URL  
-num_downloads = 55555 # 控制下载次数  
-delay = 0.1  # 指定下载间隔时间（秒）  
+num_downloads = 444 # 控制下载次数  
+delay = 1  # 指定下载间隔时间（秒）  
 download_and_delete_image(url, save_path, num_downloads, delay)
