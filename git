@@ -1,0 +1,70 @@
+# 查看所有分支
+git branch  
+
+# 查看当前分支
+git branch --show-current  
+
+# 创建新分支
+git branch 分支名  
+
+# 切换分支
+git checkout 分支名  
+# 或者使用新的命令
+git switch 分支名  
+
+# 创建并切换到新分支
+git checkout -b 分支名  
+# 或者使用新的命令
+git switch -c 分支名  
+
+# 查看当前目录下有哪些文件
+ls  
+
+# 查看文件状态
+git status  
+
+# 添加文件到暂存区
+git add 文件名  
+# 添加所有文件
+git add .  
+
+# 提交更改
+git commit -m "提交信息"  
+
+# 查看提交历史
+git log  
+
+# 推送到远程仓库
+git push  
+
+# 拉取远程仓库更新
+git pull  
+
+# 克隆远程仓库
+git clone 仓库地址  
+
+# 合并分支
+git merge 分支名  
+
+# 删除分支
+git branch -d 分支名  
+# 强制删除分支
+git branch -D 分支名  
+
+# 查看远程仓库
+git remote -v  
+
+# 添加远程仓库
+git remote add origin 仓库地址  
+
+# 删除远程仓库
+git remote remove origin  
+
+# 查看差异
+git diff  
+
+# 暂存当前更改
+git stash  
+
+# 恢复暂存的更改
+git stash pop  

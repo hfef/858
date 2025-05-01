@@ -1,0 +1,30 @@
+1. 编译单个 C 文件
+假设你有一个名为 program.c 的 C 文件，可以使用以下命令编译：
+gcc program.c -o program
+program.c 是源文件。
+-o program 指定输出的可执行文件名为 program。
+运行生成的可执行文件：
+./program
+2. 编译多个 C 文件
+如果你的项目有多个源文件，例如 file1.c 和 file2.c,可以这样编译:
+gcc file1.c file2.c -o program
+3. 启用调试信息
+如果需要调试程序，可以添加 -g 选项：
+gcc -g program.c -o program
+4. 优化代码
+使用 -O 选项可以优化代码：
+gcc -O2 program.c -o program
+5. 链接库
+如果你的程序依赖某些库，例如数学库，可以使用 -l 选项：
+gcc program.c -o program -lm
+这里的 -lm 表示链接数学库。
+gcc program.c -o program -lm
+6. 检查语法
+如果只想检查代码的语法而不生成可执行文件，可以使用 -fsyntax-only:
+gcc -fsyntax-only program.c
+7. 常见错误排查
+如果 gcc 未安装，可以使用以下命令安装：
+sudo apt update
+sudo apt install gcc
+如果运行时提示权限不足，可以给可执行文件添加执行权限：
+chmod +x program
