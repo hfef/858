@@ -1,11 +1,4 @@
 #include <stdio.h>
-
-
-
-
-
-
-
 // 定义一个结构体，用于存储 d200 和 d100
 typedef struct {
     int d200;
